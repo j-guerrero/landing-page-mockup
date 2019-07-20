@@ -100,10 +100,16 @@ body{
 	text-decoration: none;
 }
 
-.name{
+.name > a{
 	padding-left: 10px;
 	font-family: 'Audrey', cursive;
 	text-transform: uppercase;
+	text-decoration: none;
+	color:white;
+}
+
+.name > a:hover{
+	text-decoration: underline;
 }
 
 .social-media > a > img{
