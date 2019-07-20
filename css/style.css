@@ -149,7 +149,7 @@ a.button1:hover{
 	}
 
 	.header{
-		grid-area: 2/1/2/11;
+		grid-area: 1/1/2/11;
 	}
 
 	.title{
@@ -163,10 +163,6 @@ a.button1:hover{
 		display: none;
 	}
 
-	.header{
-		grid-area: 2/1/2/11;
-	}
-	
 	#gif {
 		display: block;
 		position: fixed;
