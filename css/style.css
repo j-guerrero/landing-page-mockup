@@ -146,3 +146,8 @@ a.button1:hover{
 		font-size: 8em;
 	}
 }
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
