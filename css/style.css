@@ -148,6 +148,10 @@ a.button1:hover{
 		grid-area:2/1/11/11;
 	}
 
+	.header{
+		grid-area: 2/1/2/11;
+	}
+
 	.title{
 		font-family: 'Gravity-Handwritten', cursive;
 		font-size: 8em;
@@ -159,6 +163,10 @@ a.button1:hover{
 		display: none;
 	}
 
+	.header{
+		grid-area: 2/1/2/11;
+	}
+	
 	#gif {
 		display: block;
 		position: fixed;
