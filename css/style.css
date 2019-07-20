@@ -1,3 +1,7 @@
+body{
+	margin: 0;
+}
+
 @font-face {
     font-family: anurati;
     src: url('fonts/Anurati-Regular.otf');
@@ -14,21 +18,21 @@
 
 }
 
-body{
-	margin: 0;
-}
-
-#myVideo {
+#background-video {
   	position: fixed;
   	right: 0;
   	bottom: 0;
  	min-width: 100%;
   	min-height: 100%;
-  	background-image: url('img/background.png');
+  	background-image: url('../img/background.png');
   	background-color:black;
   	background-position: center top;
   	background-size: auto;
   	z-index: -2;
+}
+
+#gif{
+	display: none;
 }
 
 #background-video-overlay{
@@ -37,9 +41,10 @@ body{
   	bottom: 0;
  	min-width: 100%;
   	min-height: 100%;
-   background:url(
-   	data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWP4////fwaiAE6VAGLvB/n+j+uoAAAAAElFTkSuQmCC
-   ) repeat;
+  	background-color: black;
+	   background:url(
+	   	data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWP4////fwaiAE6VAGLvB/n+j+uoAAAAAElFTkSuQmCC
+	   ) repeat;
   	z-index: -1;
 }
 
@@ -85,6 +90,7 @@ body{
 	background-color: transparent;
 	font-family: 'Audrey', cursive;
 	justify-content: center;
+	text-align: center;
 }
 
 .footer > a{
@@ -99,7 +105,7 @@ body{
 	text-transform: uppercase;
 }
 
-.social-media > img{
+.social-media > a > img{
 	padding: 5px 5px;
 	height:25px;
 	width: auto;
@@ -146,6 +152,28 @@ a.button1:hover{
 		font-size: 8em;
 	}
 }
+
+@media (max-width: 1024px){
+	#background-video{
+		display: none;
+	}
+
+	#gif {
+		display: block;
+		position: fixed;
+	  	right: 0;
+	  	bottom: 0;
+	 	min-width: 100%;
+	  	min-height: 100%;
+	  	background: url('../img/stars.gif');
+	  	background-color:black;
+	  	background-position: center;
+	  	background-size: cover;
+	  	z-index: -2;
+	}
+}
+
+
 
 *::-webkit-media-controls-start-playback-button {
   display: none!important;
