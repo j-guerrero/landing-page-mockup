@@ -1,0 +1,148 @@
+@font-face {
+    font-family: anurati;
+    src: url('fonts/Anurati-Regular.otf');
+}
+
+@font-face{
+	font-family: "Gravity-Handwritten";
+	src: url("fonts/Gravity-Handwritten.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "Audrey";
+	src: url('fonts/Audrey/Audrey-Normal.otf')
+
+}
+
+body{
+	margin: 0;
+}
+
+#myVideo {
+  	position: fixed;
+  	right: 0;
+  	bottom: 0;
+ 	min-width: 100%;
+  	min-height: 100%;
+  	background-image: url('img/background.png');
+  	background-color:black;
+  	background-position: center top;
+  	background-size: auto;
+  	z-index: -2;
+}
+
+#background-video-overlay{
+  	position: fixed;
+  	right: 0;
+  	bottom: 0;
+ 	min-width: 100%;
+  	min-height: 100%;
+   background:url(
+   	data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAEklEQVQImWP4////fwaiAE6VAGLvB/n+j+uoAAAAAElFTkSuQmCC
+   ) repeat;
+  	z-index: -1;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat(10,10vw);
+	grid-template-rows: repeat(10,10vh);
+	width: 100vw;
+  	height: 100vh;
+  	color: white;
+  	background:url(
+   	data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAFUlEQVQImWNgYGD4z4AAyGw8AEULAIHCA/3+HGvgAAAAAElFTkSuQmCC
+   ) repeat;
+  	z-index: 3;
+}
+
+.header{
+	display: flex;
+	grid-area: 1/1/2/11;
+	background-color: transparent;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 25px;
+}
+
+.content {
+	display: flex;
+	grid-area: 2/2/10/10;
+	background-color: transparent;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+.content > div {
+	width:100%;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	grid-area: 10/1/11/11;
+	background-color: transparent;
+	font-family: 'Audrey', cursive;
+	justify-content: center;
+}
+
+.footer > a{
+	padding: 0 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.name{
+	padding-left: 10px;
+	font-family: 'Audrey', cursive;
+	text-transform: uppercase;
+}
+
+.social-media > img{
+	padding: 5px 5px;
+	height:25px;
+	width: auto;
+}
+
+.title{
+	font-family: 'Gravity-Handwritten', cursive;
+	font-size: 10em;
+}
+
+.tagline{
+	padding:10px 0;
+	font-size: 20px;
+	font-family: 'Audrey', cursive
+}
+
+a.button1{
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border:0.1em solid #FFFFFF;
+	margin:10.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family: sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	text-align:center;
+	transition: all 0.2s;
+}
+
+a.button1:hover{
+	color:#000000;
+	background-color:#FFFFFF;
+}
+
+@media (max-width: 768px){
+	.content {
+		grid-area:2/1/11/11;
+	}
+
+	.title{
+		font-family: 'Gravity-Handwritten', cursive;
+		font-size: 8em;
+	}
+}
