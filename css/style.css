@@ -148,10 +148,6 @@ a.button1:hover{
 		grid-area:2/1/11/11;
 	}
 
-	.header{
-		grid-area: 1/1/2/11;
-	}
-
 	.title{
 		font-family: 'Gravity-Handwritten', cursive;
 		font-size: 8em;
